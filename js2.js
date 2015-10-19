@@ -5,7 +5,7 @@ function setup() {
 
     var x = 0;
     var y = 0;
-    var gridWidth = 600;
+    var gridWidth = 900;
 
     for(var i = 0; i<50; i++){
         console.log(i);
@@ -17,15 +17,10 @@ function setup() {
             //set x back to the begnning
             x = 0;
             //move y down
-            y += 270;
-        }
-    }
+            y += 50;
+        }//end if
+    }//end loop
 
-//fill('gray');
-//    rect(50+100+10,50,100,250);
-//
-//    fill(104,250,190);
-//    rect(270,50,100,250);
 }
 
 function draw(){

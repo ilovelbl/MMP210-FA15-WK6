@@ -3,16 +3,22 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
 
 
-    //drawWindow(50,50);//call the function
-    //drawWindow(50+100+10,50);
+    var x = 0;
+    var y = 0;
+    var gridWidth = 600;
 
-    for(var i = 0; i<10; i++){
+    for(var i = 0; i<50; i++){
         console.log(i);
-        drawWindow(150*i+10,50);
-    }
-    for(var j =0; j<11; j++){
-        console.log(j);
-        drawWindow(150*j+20,350);
+        drawWindow(x,y);
+        // increment our X
+        x += 120;//same as x = x + 120
+        //check if x is past the grid width
+        if(x > gridWidth){
+            //set x back to the begnning
+            x = 0;
+            //move y down
+            y += 270;
+        }
     }
 
 //fill('gray');
